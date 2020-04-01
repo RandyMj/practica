@@ -1,0 +1,346 @@
+body {
+    color: #3f3f3f;
+    margin: 0;
+    font-family: 'Baloo Da 2';
+    overflow-x: hidden;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+h3, h4, h5 {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+h4 {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#name, #date {
+    width: 212px;
+    height: 20px;
+    padding-left: 5px;
+    outline: none;
+}
+
+#supcontainer {
+    display: flex;
+    width: 100vw;
+    height: 650px;
+    justify-content: center;
+    background-image:url(../supimage/supimage.jpeg);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#gameimage {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(68, 68, 68);
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
+#midcontainer {
+    display: grid;
+    width: 100vw;
+    height: 600px;
+    background-image:url(../midimages/midfondo.jpeg);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-rows: 225px 225px;
+    grid-gap: 30px 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.items {
+    width: 300px;
+    height: 225px;
+    border-radius: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    position: absolute;
+}
+.overlay {
+  opacity: 0;
+}
+.overlay_title, .overlay_text {
+    color: white;
+    position: absolute;
+    font-family: 'Baloo Da 2';
+}
+.overlay_title {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.overlay_text {
+  font-size: 20px;
+  padding-left: 25px;
+  padding-top: 180px;
+}
+
+.mid_div:hover .overlay {
+  opacity: 1;
+}
+.mid_div:hover {
+  cursor: pointer;
+}
+
+
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+
+#data_input {
+    width: 100vw;
+    height: 700px;
+    background-color: #302B2B;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#user_data {
+    display: block;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 15px;
+    outline: none;
+}
+
+#comment_box {
+    display: block;
+    width: 500px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 15px;
+    padding-top: 8px;
+    outline: none;
+}
+
+#btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+#btn:hover {
+    cursor: pointer;
+}
+
+#user_data::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+@media screen and (max-width: 1024px) {
+  #midcontainer {
+      display: grid;
+      width: 100vw;
+      height: 600px;
+      background-image:url(../midimages/midfondo.jpeg);
+      background-attachment: fixed;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-template-columns: 215px 215px 215px 215px ;
+      grid-template-rows: 160px 160px;
+      grid-gap: 21px 7px;
+      justify-content: center;
+      align-content: center;
+  }
+  .items {
+    width: 215px;
+    height: 160px;
+    border-radius: 7px;
+    border: 1px solid rgb(200, 200, 200);
+    position: absolute;
+  }
+  .overlay_title {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .overlay_text {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #midcontainer {
+      display: grid;
+      width: 100vw;
+      height: 768px;
+      background-image:url(../midimages/midfondo.jpeg);
+      background-attachment: fixed;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-template-columns: 215px 215px;
+      grid-template-rows: 160px 160px 160px 160px;
+      grid-gap: 21px 7px;
+      justify-content: center;
+      align-content: center;
+  }
+  .items {
+    width: 215px;
+    height: 160px;
+    border-radius: 7px;
+    border: 1px solid rgb(200, 200, 200);
+    position: absolute;
+  }
+  .overlay_title {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .overlay_text {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #midcontainer {
+      display: grid;
+      width: 100vw;
+      height: 1200px;
+      background-image:url(../midimages/midfondo.jpeg);
+      background-attachment: fixed;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-template-columns: 200px;
+      grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px;
+      grid-gap: 15px;
+      justify-content: center;
+      align-content: center;
+  }
+  .items {
+    width: 200px;
+    height: 130px;
+    border-radius: 7px;
+    border: 1px solid rgb(200, 200, 200);
+    position: absolute;
+  }
+  #data_input {
+      width: 100vw;
+      height: 600px;
+      background-color: #302B2B;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+  }
+  #user_data {
+      display: block;
+      width: 350px;
+      height: 40px;
+      margin-bottom: 70px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      outline: none;
+  }
+
+  #comment_box {
+      display: block;
+      width: 350px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      padding-top: 8px;
+      outline: none;
+  }
+  .overlay_title {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .overlay_text {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #user_data {
+      display: block;
+      width: 325px;
+      height: 40px;
+      margin-bottom: 70px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      outline: none;
+  }
+
+  #comment_box {
+      display: block;
+      width: 325px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      padding-top: 8px;
+      outline: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  #data_input {
+      width: 100vw;
+      height: 475px;
+      background-color: #302B2B;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+  }
+  #user_data {
+      display: block;
+      width: 260px;
+      height: 40px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      outline: none;
+  }
+
+  #comment_box {
+      display: block;
+      width: 260px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 15px;
+      padding-top: 8px;
+      outline: none;
+  }
+}
